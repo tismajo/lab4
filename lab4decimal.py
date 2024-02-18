@@ -15,7 +15,8 @@ def decimToBinary(numDecimal):
 binario = decimToBinary(numDecimal)
 print(f"El número {numDecimal} en binario es {binario}")
 
-binaryNum = int(input("->"))
+
+binary = input("Ingresa un número binario: ")
 def binaryToDecim(binary):
     position = 0
     decimal = 0
@@ -25,10 +26,9 @@ def binaryToDecim(binary):
         decimal += int(digit) * multiplier
         position += 1
     return decimal
-
-binary = input("Ingresa un número binario: ")
 decimal = binaryToDecim(binary)
 print(decimal)
+
 
 def hexadecimal_a_decimal(hexadecimal):
     decimal = int(hexadecimal, 16)
